@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #262730;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .input-label {
+            color: #262730;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .chat-container {
+            margin-top: 20px;
+            height: 400px;
+            overflow-y: scroll;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .user-message {
+            margin-bottom: 10px;
+        }
+
+        .bot-message {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .submit-button {
+            background-color: #262730;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #1c1d22;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎞 Youtube Vídeo Chatbot</h1>
+    </div>
+
+    <div class="container">
+        <label class="input-label">OpenAI API Key</label>
+        <input class="input-field" type="password" value="" />
+
+        <h3>Adicione o URL do Youtube</h3>
+        <input class="input-field" type="text" value="" />
+
+        <div class="chat-container">
+            <div class="bot-message">Bot: Olá, como posso ajudar?</div>
+            <div class="user-message">Usuário: Qual é o melhor vídeo do YouTube?</div>
+            <div class="bot-message">Bot: Existem muitos vídeos excelentes no YouTube, qual é o seu interesse?</div>
+        </div>
+
+        <label class="input-label">Faça sua pergunta</label>
+        <input class="input-field" type="text" value="" />
+
+        <button class="submit-button" type="button">Enviar</button>
+    </div>
+
+    <div class="footer">
+        Deves Tecnologia
+    </div>
+</body>
+</html>
